@@ -8,10 +8,10 @@
         <div class="flex flex-col md:flex-row justify-between items-center">
             <p class="mb-2 md:mb-0">14:10 Weds 14 August 2024 – 14:09 Fri 13 Sept 2024</p>
             <div class="flex flex-wrap space-x-2">
-                <button class="border font-medium rounded-full px-5 py-2.5 w-full md:w-auto text-center hover:bg-black hover:text-white transition">Last updated</button>
-                <button class="border font-medium rounded-full px-5 py-2.5 w-full md:w-auto text-center hover:bg-black hover:text-white transition">Last month</button>
-                <button class="border font-medium rounded-full px-5 py-2.5 w-full md:w-auto text-center hover:bg-black hover:text-white transition">Last week</button>
-                <button class="border font-medium rounded-full px-5 py-2.5 w-full md:w-auto text-center hover:bg-black hover:text-white transition">Last 24 hours</button>
+                <BaseButton label="Last Updated" />
+                <BaseButton label="Last month" />
+                <BaseButton label="Last week" />
+                <BaseButton label="Last 24 hours" />
             </div>
             </div>
 
@@ -105,6 +105,7 @@
 
 <script setup>
 import { reactive } from 'vue'
+import BaseButton from '@/components/common/BaseButton.vue';
 
 const products = reactive([
     { id: 1, name: 'Product', percentage: 0 },

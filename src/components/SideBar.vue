@@ -16,7 +16,7 @@
             <li class="sidebar-item"><VoucherIcon /></li>
         </ul>
         <div class="flex items-center justify-center mt-auto">
-            ToggleIcon
+           <ToggleButton />
         </div>
     </aside>
 </template>
@@ -29,6 +29,7 @@ import BrandIconn from '../assets/icons/Brand-default.svg'
 import VenueIcon from '../assets/icons/Venue-default.svg'
 import ProductIcon from '../assets/icons/Products-default.svg'
 import VoucherIcon from '../assets/icons/Voucher-default.svg'
+import ToggleButton from './common/ToggleButton.vue'
 </script>
 
 <style scoped>
